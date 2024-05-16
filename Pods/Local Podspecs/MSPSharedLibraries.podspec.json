@@ -12,7 +12,7 @@
     "huanzhiNB": "huanzhi.zhang@newsbreak.com"
   },
   "source": {
-    "git": "",
+    "git": "https://github.com/huanzhiNB/msp-ios-sdk-public.git",
     "tag": "0.0.1"
   },
   "source_files": "MSPSharedLibraries/**/*.{h,m,swift}",

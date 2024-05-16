@@ -3,24 +3,24 @@
 
 workspace 'msp-ios-sdk'
 
-project 'PrebidAdapter/PrebidAdapter'
+#project 'PrebidAdapter/PrebidAdapter'
 project 'GoogleAdapter/GoogleAdapter'
 project 'MSPCore/MSPCore'
 project 'MSPDemoApp/MSPDemoApp'
 project 'MSPSharedLibraries/MSPSharedLibraries'
 
-target 'PrebidAdapter' do
-  project 'PrebidAdapter/PrebidAdapter'
+#target 'PrebidAdapter' do
+#  project 'PrebidAdapter/PrebidAdapter'
   # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
+#  use_frameworks!
 
   # Pods for PrebidAdapter
 
-  target 'PrebidAdapterTests' do
+#  target 'PrebidAdapterTests' do
     # Pods for testing
-  end
+#  end
 
-end
+#end
 
 target 'MSPCore' do
   project 'MSPCore/MSPCore'

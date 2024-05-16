@@ -37,7 +37,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/huanzhiNB/msp-ios-sdk-public.git", :tag => "#{spec.version}" }
 
   spec.ios.deployment_target = '13.0'
 

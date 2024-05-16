@@ -9,7 +9,7 @@
     "huanzhiNB": "huanzhi.zhang@newsbreak.com"
   },
   "source": {
-    "git": "",
+    "git": "https://github.com/huanzhiNB/msp-ios-sdk-public.git",
     "tag": "0.0.1"
   },
   "platforms": {
@@ -25,5 +25,11 @@
 
     ]
   },
-  "public_header_files": "GoogleAdapter//**/*.h"
+  "public_header_files": "GoogleAdapter//**/*.h",
+  "pod_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
+  "user_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  }
 }
