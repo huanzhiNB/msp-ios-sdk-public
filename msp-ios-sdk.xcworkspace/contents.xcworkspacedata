@@ -8,9 +8,6 @@
       location = "group:MSPCore/MSPCore.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:PrebidAdapter/PrebidAdapter.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:GoogleAdapter/GoogleAdapter.xcodeproj">
    </FileRef>
    <FileRef
