@@ -1,6 +1,6 @@
 {
   "name": "MSPSharedLibraries",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "summary": "An utility helper for MSP",
   "platforms": {
     "ios": "13.0"
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/huanzhiNB/msp-ios-sdk-public.git",
-    "tag": "0.0.1"
+    "tag": "0.0.2"
   },
   "source_files": "MSPSharedLibraries/**/*.{h,m,swift}",
   "exclude_files": "Classes/Exclude",

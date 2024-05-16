@@ -53,7 +53,7 @@ PODS:
     - GoogleUtilities/Privacy
   - MSPCore (0.0.1):
     - MSPSharedLibraries
-  - MSPSharedLibraries (0.0.1)
+  - MSPSharedLibraries (0.0.2)
   - nanopb (2.30910.0):
     - nanopb/decode (= 2.30910.0)
     - nanopb/encode (= 2.30910.0)
@@ -90,7 +90,7 @@ SPEC CHECKSUMS:
   GoogleUserMessagingPlatform: f131fa7978d2ba88d7426702b057c2cc318e6595
   GoogleUtilities: ea963c370a38a8069cc5f7ba4ca849a60b6d7d15
   MSPCore: d6289b5494829aaa2862322e0a0066d2de2c2683
-  MSPSharedLibraries: 45d3db0ea1e12aed4390335aa44bf98ea5888e71
+  MSPSharedLibraries: 6d625d0a1d8aa01af1f2ea4f2dccaceba06ebbab
   nanopb: 438bc412db1928dac798aa6fd75726007be04262
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
 
