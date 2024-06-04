@@ -64,7 +64,7 @@ PODS:
 DEPENDENCIES:
   - GoogleAdapter (from `GoogleAdapter`)
   - MSPCore (from `MSPCore`)
-  - MSPSharedLibraries (from `MSPSharedLibraries`)
+  - MSPSharedLibraries
 
 SPEC REPOS:
   trunk:
@@ -72,6 +72,7 @@ SPEC REPOS:
     - GoogleAppMeasurement
     - GoogleUserMessagingPlatform
     - GoogleUtilities
+    - MSPSharedLibraries
     - nanopb
     - PromisesObjC
 
@@ -80,8 +81,6 @@ EXTERNAL SOURCES:
     :path: GoogleAdapter
   MSPCore:
     :path: MSPCore
-  MSPSharedLibraries:
-    :path: MSPSharedLibraries
 
 SPEC CHECKSUMS:
   Google-Mobile-Ads-SDK: 8f67a72f88d057335b1ac3f501e2b68ad054116e
@@ -90,10 +89,10 @@ SPEC CHECKSUMS:
   GoogleUserMessagingPlatform: f131fa7978d2ba88d7426702b057c2cc318e6595
   GoogleUtilities: ea963c370a38a8069cc5f7ba4ca849a60b6d7d15
   MSPCore: d6289b5494829aaa2862322e0a0066d2de2c2683
-  MSPSharedLibraries: 6d625d0a1d8aa01af1f2ea4f2dccaceba06ebbab
+  MSPSharedLibraries: 6e8d5d746cfe90fa1feac917a65e69b3abb33f32
   nanopb: 438bc412db1928dac798aa6fd75726007be04262
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
 
-PODFILE CHECKSUM: 364adc31d214479a282c01295140318c7c10dffb
+PODFILE CHECKSUM: 2a01df6c3d9ededa527762a84d3734a1a77b1f71
 
 COCOAPODS: 1.14.3

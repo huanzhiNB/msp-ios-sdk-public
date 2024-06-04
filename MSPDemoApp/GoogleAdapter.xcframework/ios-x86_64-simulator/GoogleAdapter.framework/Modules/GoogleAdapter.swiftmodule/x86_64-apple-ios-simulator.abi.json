@@ -1,0 +1,1237 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GoogleAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleMobileAds",
+        "printedName": "GoogleMobileAds",
+        "declKind": "Import",
+        "moduleName": "GoogleAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "MSPiOSCore",
+        "printedName": "MSPiOSCore",
+        "declKind": "Import",
+        "moduleName": "GoogleAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "PrebidMobile",
+        "printedName": "PrebidMobile",
+        "declKind": "Import",
+        "moduleName": "GoogleAdapter"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GADAdLoder",
+        "printedName": "GADAdLoder",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "destroyAd",
+            "printedName": "destroyAd()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13GoogleAdapter10GADAdLoderC9destroyAdyyF",
+            "mangledName": "$s13GoogleAdapter10GADAdLoderC9destroyAdyyF",
+            "moduleName": "GoogleAdapter",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "initializeGAD",
+            "printedName": "initializeGAD()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GoogleAdapter@objc(cs)GADAdLoder(cm)initializeGAD",
+            "mangledName": "$s13GoogleAdapter10GADAdLoderC13initializeGADyyFZ",
+            "moduleName": "GoogleAdapter",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize(initParams:adapterInitListener:context:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "InitializationParameters",
+                "printedName": "MSPiOSCore.InitializationParameters",
+                "usr": "s:10MSPiOSCore24InitializationParametersC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdapterInitListener",
+                "printedName": "any MSPiOSCore.AdapterInitListener",
+                "usr": "s:10MSPiOSCore19AdapterInitListenerP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13GoogleAdapter10GADAdLoderC10initialize10initParams19adapterInitListener7contexty10MSPiOSCore24InitializationParametersC_AH0biJ0_pypSgtF",
+            "mangledName": "$s13GoogleAdapter10GADAdLoderC10initialize10initParams19adapterInitListener7contexty10MSPiOSCore24InitializationParametersC_AH0biJ0_pypSgtF",
+            "moduleName": "GoogleAdapter",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "gadBannerView",
+            "printedName": "gadBannerView",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "GoogleMobileAds.GAMBannerView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GAMBannerView",
+                    "printedName": "GoogleMobileAds.GAMBannerView",
+                    "usr": "c:objc(cs)GAMBannerView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13GoogleAdapter10GADAdLoderC13gadBannerViewSo09GAMBannerG0CSgvp",
+            "mangledName": "$s13GoogleAdapter10GADAdLoderC13gadBannerViewSo09GAMBannerG0CSgvp",
+            "moduleName": "GoogleAdapter",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "GoogleMobileAds.GAMBannerView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GAMBannerView",
+                        "printedName": "GoogleMobileAds.GAMBannerView",
+                        "usr": "c:objc(cs)GAMBannerView"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13GoogleAdapter10GADAdLoderC13gadBannerViewSo09GAMBannerG0CSgvg",
+                "mangledName": "$s13GoogleAdapter10GADAdLoderC13gadBannerViewSo09GAMBannerG0CSgvg",
+                "moduleName": "GoogleAdapter",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "GoogleMobileAds.GAMBannerView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GAMBannerView",
+                        "printedName": "GoogleMobileAds.GAMBannerView",
+                        "usr": "c:objc(cs)GAMBannerView"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13GoogleAdapter10GADAdLoderC13gadBannerViewSo09GAMBannerG0CSgvs",
+                "mangledName": "$s13GoogleAdapter10GADAdLoderC13gadBannerViewSo09GAMBannerG0CSgvs",
+                "moduleName": "GoogleAdapter",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13GoogleAdapter10GADAdLoderC13gadBannerViewSo09GAMBannerG0CSgvM",
+                "mangledName": "$s13GoogleAdapter10GADAdLoderC13gadBannerViewSo09GAMBannerG0CSgvM",
+                "moduleName": "GoogleAdapter",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "rootViewController",
+            "printedName": "rootViewController",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIViewController",
+                    "printedName": "UIKit.UIViewController",
+                    "usr": "c:objc(cs)UIViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13GoogleAdapter10GADAdLoderC18rootViewControllerSo06UIViewG0CSgvp",
+            "mangledName": "$s13GoogleAdapter10GADAdLoderC18rootViewControllerSo06UIViewG0CSgvp",
+            "moduleName": "GoogleAdapter",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIViewController?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIViewController",
+                        "printedName": "UIKit.UIViewController",
+                        "usr": "c:objc(cs)UIViewController"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13GoogleAdapter10GADAdLoderC18rootViewControllerSo06UIViewG0CSgvg",
+                "mangledName": "$s13GoogleAdapter10GADAdLoderC18rootViewControllerSo06UIViewG0CSgvg",
+                "moduleName": "GoogleAdapter",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIViewController?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIViewController",
+                        "printedName": "UIKit.UIViewController",
+                        "usr": "c:objc(cs)UIViewController"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13GoogleAdapter10GADAdLoderC18rootViewControllerSo06UIViewG0CSgvs",
+                "mangledName": "$s13GoogleAdapter10GADAdLoderC18rootViewControllerSo06UIViewG0CSgvs",
+                "moduleName": "GoogleAdapter",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13GoogleAdapter10GADAdLoderC18rootViewControllerSo06UIViewG0CSgvM",
+                "mangledName": "$s13GoogleAdapter10GADAdLoderC18rootViewControllerSo06UIViewG0CSgvM",
+                "moduleName": "GoogleAdapter",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "adListener",
+            "printedName": "adListener",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any MSPiOSCore.AdListener)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdListener",
+                    "printedName": "any MSPiOSCore.AdListener",
+                    "usr": "s:10MSPiOSCore10AdListenerP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13GoogleAdapter10GADAdLoderC10adListener10MSPiOSCore02AdF0_pSgvp",
+            "mangledName": "$s13GoogleAdapter10GADAdLoderC10adListener10MSPiOSCore02AdF0_pSgvp",
+            "moduleName": "GoogleAdapter",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any MSPiOSCore.AdListener)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdListener",
+                        "printedName": "any MSPiOSCore.AdListener",
+                        "usr": "s:10MSPiOSCore10AdListenerP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13GoogleAdapter10GADAdLoderC10adListener10MSPiOSCore02AdF0_pSgvg",
+                "mangledName": "$s13GoogleAdapter10GADAdLoderC10adListener10MSPiOSCore02AdF0_pSgvg",
+                "moduleName": "GoogleAdapter",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any MSPiOSCore.AdListener)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdListener",
+                        "printedName": "any MSPiOSCore.AdListener",
+                        "usr": "s:10MSPiOSCore10AdListenerP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13GoogleAdapter10GADAdLoderC10adListener10MSPiOSCore02AdF0_pSgvs",
+                "mangledName": "$s13GoogleAdapter10GADAdLoderC10adListener10MSPiOSCore02AdF0_pSgvs",
+                "moduleName": "GoogleAdapter",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13GoogleAdapter10GADAdLoderC10adListener10MSPiOSCore02AdF0_pSgvM",
+                "mangledName": "$s13GoogleAdapter10GADAdLoderC10adListener10MSPiOSCore02AdF0_pSgvM",
+                "moduleName": "GoogleAdapter",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "priceInDollar",
+            "printedName": "priceInDollar",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13GoogleAdapter10GADAdLoderC13priceInDollarSdSgvp",
+            "mangledName": "$s13GoogleAdapter10GADAdLoderC13priceInDollarSdSgvp",
+            "moduleName": "GoogleAdapter",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13GoogleAdapter10GADAdLoderC13priceInDollarSdSgvg",
+                "mangledName": "$s13GoogleAdapter10GADAdLoderC13priceInDollarSdSgvg",
+                "moduleName": "GoogleAdapter",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13GoogleAdapter10GADAdLoderC13priceInDollarSdSgvs",
+                "mangledName": "$s13GoogleAdapter10GADAdLoderC13priceInDollarSdSgvs",
+                "moduleName": "GoogleAdapter",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13GoogleAdapter10GADAdLoderC13priceInDollarSdSgvM",
+                "mangledName": "$s13GoogleAdapter10GADAdLoderC13priceInDollarSdSgvM",
+                "moduleName": "GoogleAdapter",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "loadAdCreative",
+            "printedName": "loadAdCreative(bidResponse:adListener:context:adRequest:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdListener",
+                "printedName": "any MSPiOSCore.AdListener",
+                "usr": "s:10MSPiOSCore10AdListenerP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdRequest",
+                "printedName": "MSPiOSCore.AdRequest",
+                "usr": "s:10MSPiOSCore9AdRequestC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13GoogleAdapter10GADAdLoderC14loadAdCreative11bidResponse10adListener7context0J7Requestyyp_10MSPiOSCore0fK0_pypAI0fM0CtF",
+            "mangledName": "$s13GoogleAdapter10GADAdLoderC14loadAdCreative11bidResponse10adListener7context0J7Requestyyp_10MSPiOSCore0fK0_pypAI0fM0CtF",
+            "moduleName": "GoogleAdapter",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "SafeAs",
+            "printedName": "SafeAs(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_1?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_0?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Metatype",
+                "printedName": "τ_0_1.Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13GoogleAdapter10GADAdLoderC6SafeAsyq_SgxSg_q_mtr0_lF",
+            "mangledName": "$s13GoogleAdapter10GADAdLoderC6SafeAsyq_SgxSg_q_mtr0_lF",
+            "moduleName": "GoogleAdapter",
+            "genericSig": "<τ_0_0, τ_0_1>",
+            "sugared_genericSig": "<T, U>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GADAdLoder",
+                "printedName": "GoogleAdapter.GADAdLoder",
+                "usr": "c:@M@GoogleAdapter@objc(cs)GADAdLoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GoogleAdapter@objc(cs)GADAdLoder(im)init",
+            "mangledName": "$s13GoogleAdapter10GADAdLoderCACycfc",
+            "moduleName": "GoogleAdapter",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "bannerViewDidReceiveAd",
+            "printedName": "bannerViewDidReceiveAd(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GADBannerView",
+                "printedName": "GoogleMobileAds.GADBannerView",
+                "usr": "c:objc(cs)GADBannerView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GoogleAdapter@objc(cs)GADAdLoder(im)bannerViewDidReceiveAd:",
+            "mangledName": "$s13GoogleAdapter10GADAdLoderC22bannerViewDidReceiveAdyySo09GADBannerF0CF",
+            "moduleName": "GoogleAdapter",
+            "objc_name": "bannerViewDidReceiveAd:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "bannerView",
+            "printedName": "bannerView(_:didFailToReceiveAdWithError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GADBannerView",
+                "printedName": "GoogleMobileAds.GADBannerView",
+                "usr": "c:objc(cs)GADBannerView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GoogleAdapter@objc(cs)GADAdLoder(im)bannerView:didFailToReceiveAdWithError:",
+            "mangledName": "$s13GoogleAdapter10GADAdLoderC10bannerView_27didFailToReceiveAdWithErrorySo09GADBannerF0C_s0M0_ptF",
+            "moduleName": "GoogleAdapter",
+            "objc_name": "bannerView:didFailToReceiveAdWithError:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "bannerViewDidRecordClick",
+            "printedName": "bannerViewDidRecordClick(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GADBannerView",
+                "printedName": "GoogleMobileAds.GADBannerView",
+                "usr": "c:objc(cs)GADBannerView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GoogleAdapter@objc(cs)GADAdLoder(im)bannerViewDidRecordClick:",
+            "mangledName": "$s13GoogleAdapter10GADAdLoderC24bannerViewDidRecordClickyySo09GADBannerF0CF",
+            "moduleName": "GoogleAdapter",
+            "objc_name": "bannerViewDidRecordClick:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "bannerViewDidRecordImpression",
+            "printedName": "bannerViewDidRecordImpression(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GADBannerView",
+                "printedName": "GoogleMobileAds.GADBannerView",
+                "usr": "c:objc(cs)GADBannerView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GoogleAdapter@objc(cs)GADAdLoder(im)bannerViewDidRecordImpression:",
+            "mangledName": "$s13GoogleAdapter10GADAdLoderC29bannerViewDidRecordImpressionyySo09GADBannerF0CF",
+            "moduleName": "GoogleAdapter",
+            "objc_name": "bannerViewDidRecordImpression:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@GoogleAdapter@objc(cs)GADAdLoder",
+        "mangledName": "$s13GoogleAdapter10GADAdLoderC",
+        "moduleName": "GoogleAdapter",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "AdNetworkAdapter",
+            "printedName": "AdNetworkAdapter",
+            "usr": "s:10MSPiOSCore16AdNetworkAdapterP",
+            "mangledName": "$s10MSPiOSCore16AdNetworkAdapterP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GoogleAd",
+        "printedName": "GoogleAd",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "adView",
+            "printedName": "adView",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13GoogleAdapter0A2AdC6adViewSo6UIViewCSgvp",
+            "mangledName": "$s13GoogleAdapter0A2AdC6adViewSo6UIViewCSgvp",
+            "moduleName": "GoogleAdapter",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIView",
+                        "printedName": "UIKit.UIView",
+                        "usr": "c:objc(cs)UIView"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13GoogleAdapter0A2AdC6adViewSo6UIViewCSgvg",
+                "mangledName": "$s13GoogleAdapter0A2AdC6adViewSo6UIViewCSgvg",
+                "moduleName": "GoogleAdapter",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIView",
+                        "printedName": "UIKit.UIView",
+                        "usr": "c:objc(cs)UIView"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13GoogleAdapter0A2AdC6adViewSo6UIViewCSgvs",
+                "mangledName": "$s13GoogleAdapter0A2AdC6adViewSo6UIViewCSgvs",
+                "moduleName": "GoogleAdapter",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13GoogleAdapter0A2AdC6adViewSo6UIViewCSgvM",
+                "mangledName": "$s13GoogleAdapter0A2AdC6adViewSo6UIViewCSgvM",
+                "moduleName": "GoogleAdapter",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(adNetworkAdapter:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GoogleAd",
+                "printedName": "GoogleAdapter.GoogleAd",
+                "usr": "s:13GoogleAdapter0A2AdC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdNetworkAdapter",
+                "printedName": "any MSPiOSCore.AdNetworkAdapter",
+                "usr": "s:10MSPiOSCore16AdNetworkAdapterP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13GoogleAdapter0A2AdC09adNetworkB0AC10MSPiOSCore0ceB0_p_tcfc",
+            "mangledName": "$s13GoogleAdapter0A2AdC09adNetworkB0AC10MSPiOSCore0ceB0_p_tcfc",
+            "moduleName": "GoogleAdapter",
+            "overriding": true,
+            "implicit": true,
+            "declAttributes": [
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:13GoogleAdapter0A2AdC",
+        "mangledName": "$s13GoogleAdapter0A2AdC",
+        "moduleName": "GoogleAdapter",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "superclassUsr": "s:10MSPiOSCore5MSPAdC",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "MSPiOSCore.MSPAd"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GoogleAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MSPiOSCore",
+        "printedName": "MSPiOSCore",
+        "declKind": "Import",
+        "moduleName": "GoogleAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleMobileAds",
+        "printedName": "GoogleMobileAds",
+        "declKind": "Import",
+        "moduleName": "GoogleAdapter"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GoogleQueryInfoFetcherHelper",
+        "printedName": "GoogleQueryInfoFetcherHelper",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GoogleQueryInfoFetcherHelper",
+                "printedName": "GoogleAdapter.GoogleQueryInfoFetcherHelper",
+                "usr": "s:13GoogleAdapter0A22QueryInfoFetcherHelperC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13GoogleAdapter0A22QueryInfoFetcherHelperCACycfc",
+            "mangledName": "$s13GoogleAdapter0A22QueryInfoFetcherHelperCACycfc",
+            "moduleName": "GoogleAdapter",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "fetch",
+            "printedName": "fetch(completeListener:adRequest:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GoogleQueryInfoListener",
+                "printedName": "any MSPiOSCore.GoogleQueryInfoListener",
+                "usr": "s:10MSPiOSCore23GoogleQueryInfoListenerP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdRequest",
+                "printedName": "MSPiOSCore.AdRequest",
+                "usr": "s:10MSPiOSCore9AdRequestC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13GoogleAdapter0A22QueryInfoFetcherHelperC5fetch16completeListener9adRequesty10MSPiOSCore0acdI0_p_AG02AdK0CtF",
+            "mangledName": "$s13GoogleAdapter0A22QueryInfoFetcherHelperC5fetch16completeListener9adRequesty10MSPiOSCore0acdI0_p_AG02AdK0CtF",
+            "moduleName": "GoogleAdapter",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:13GoogleAdapter0A22QueryInfoFetcherHelperC",
+        "mangledName": "$s13GoogleAdapter0A22QueryInfoFetcherHelperC",
+        "moduleName": "GoogleAdapter",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "GoogleQueryInfoFetcher",
+            "printedName": "GoogleQueryInfoFetcher",
+            "usr": "s:10MSPiOSCore22GoogleQueryInfoFetcherP",
+            "mangledName": "$s10MSPiOSCore22GoogleQueryInfoFetcherP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GoogleAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MSPiOSCore",
+        "printedName": "MSPiOSCore",
+        "declKind": "Import",
+        "moduleName": "GoogleAdapter"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GoogleManager",
+        "printedName": "GoogleManager",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GoogleManager",
+                "printedName": "GoogleAdapter.GoogleManager",
+                "usr": "s:13GoogleAdapter0A7ManagerC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13GoogleAdapter0A7ManagerCACycfc",
+            "mangledName": "$s13GoogleAdapter0A7ManagerCACycfc",
+            "moduleName": "GoogleAdapter",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "getAdNetworkAdapter",
+            "printedName": "getAdNetworkAdapter()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AdNetworkAdapter",
+                "printedName": "any MSPiOSCore.AdNetworkAdapter",
+                "usr": "s:10MSPiOSCore16AdNetworkAdapterP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13GoogleAdapter0A7ManagerC012getAdNetworkB010MSPiOSCore0efB0_pyF",
+            "mangledName": "$s13GoogleAdapter0A7ManagerC012getAdNetworkB010MSPiOSCore0efB0_pyF",
+            "moduleName": "GoogleAdapter",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:13GoogleAdapter0A7ManagerC",
+        "mangledName": "$s13GoogleAdapter0A7ManagerC",
+        "moduleName": "GoogleAdapter",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "AdNetworkManager",
+            "printedName": "AdNetworkManager",
+            "usr": "s:10MSPiOSCore16AdNetworkManagerP",
+            "mangledName": "$s10MSPiOSCore16AdNetworkManagerP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}

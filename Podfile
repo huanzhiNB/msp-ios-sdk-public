@@ -7,7 +7,7 @@ workspace 'msp-ios-sdk'
 project 'GoogleAdapter/GoogleAdapter'
 project 'MSPCore/MSPCore'
 project 'MSPDemoApp/MSPDemoApp'
-project 'MSPSharedLibraries/MSPSharedLibraries'
+#project 'MSPSharedLibraries/MSPSharedLibraries'
 
 #target 'PrebidAdapter' do
 #  project 'PrebidAdapter/PrebidAdapter'
@@ -38,10 +38,10 @@ target 'MSPCore' do
 
 end
 
-target 'MSPSharedLibraries' do
-  project 'MSPSharedLibraries/MSPSharedLibraries'
+#target 'MSPSharedLibraries' do
+#  project 'MSPSharedLibraries/MSPSharedLibraries'
   
-end
+#end
 
 
 target 'GoogleAdapter' do
@@ -63,6 +63,6 @@ target 'MSPDemoApp' do
   
   pod 'MSPCore',  :path => 'MSPCore', :modular_headers => true
   pod 'GoogleAdapter',  :path => 'GoogleAdapter', :modular_headers => true
-  pod 'MSPSharedLibraries', :path => 'MSPSharedLibraries', :modular_headers => true
+  pod 'MSPSharedLibraries', :modular_headers => true
  
 end
