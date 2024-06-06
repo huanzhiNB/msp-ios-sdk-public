@@ -42,7 +42,7 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = '13.0'
 
 
-  spec.source_files  = "GoogleAdapter/**/*.{h,m,swift}"
+  spec.source_files  = "GoogleAdapter/GoogleAdapter/**/*.{h,m,swift}"
   spec.exclude_files = "Classes/Exclude"
 
   spec.dependency 'Google-Mobile-Ads-SDK', "10.14.0"
@@ -50,10 +50,10 @@ Pod::Spec.new do |spec|
 
   #spec.module_map = 'GoogleAdapter/GoogleAdapter.modulemap'
 
-  spec.public_header_files = "GoogleAdapter//**/*.h"
+  #spec.public_header_files = "GoogleAdapter//**/*.h"
   #spec.vendored_frameworks= "PrebidMobile.xcframework", "MSPiOSCore.xcframework"
 
-  spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
   spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
 
