@@ -5,7 +5,7 @@ Pod::Spec.new do |spec|
   
 
   spec.name         = "GoogleAdapter"
-  spec.version      = "0.0.3"
+  spec.version      = "0.0.4"
   spec.summary      = "an adapter for Google SDK"
   spec.description  = "an adapter for Google SDK for MSP S2S"
 
@@ -51,7 +51,7 @@ Pod::Spec.new do |spec|
   #spec.module_map = 'GoogleAdapter/GoogleAdapter.modulemap'
 
   #spec.public_header_files = "GoogleAdapter//**/*.h"
-  spec.vendored_frameworks= "GoogleAdapter/shared.xcframework"
+  #spec.vendored_frameworks= "GoogleAdapter/shared.xcframework"
 
   spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
   spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
