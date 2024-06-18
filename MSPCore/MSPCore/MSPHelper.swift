@@ -104,16 +104,20 @@ public class iOSAdLoader: BidListener {
         self.adListener = adListener
         self.adRequest = adRequest
         
-        self.bidLoader = MSPHelper.shared.bidLoaderProvider.getBidLoader()
+        let bidLoader = MSPHelper.shared.bidLoaderProvider.getBidLoader()
+        self.bidLoader = bidLoader
         self.rootViewController = rootViewController
-        bidLoader?.loadBid(placementId: placementId, adParams: adRequest.customParams, bidListener: self, adRequest: adRequest)
+        bidLoader.loadBid(placementId: placementId, adParams: adRequest.customParams, bidListener: self, adRequest: adRequest)
     }
     
     public func onBidResponse(bidResponse: Any, adNetwork: AdNetwork) {
         adNetworkAdapter = MSPHelper.shared.adNetworkAdapterProvider.getAdNetworkAdapter(adNetwork: adNetwork)
         if let adListener = self.adListener,
-           let adRequest = self.adRequest {
-            adNetworkAdapter?.loadAdCreative(bidResponse: bidResponse, adListener: adListener, context: self.rootViewController ?? self, adRequest: adRequest)
+           let adRequest = self.adRequest,
+           let adNetworkAdapter = adNetworkAdapter {
+            adNetworkAdapter.loadAdCreative(bidResponse: bidResponse, adListener: adListener, context: self.rootViewController ?? self, adRequest: adRequest)
+        } else {
+            adListener?.onError(msg: "unable to load ad creative")
         }
     }
     

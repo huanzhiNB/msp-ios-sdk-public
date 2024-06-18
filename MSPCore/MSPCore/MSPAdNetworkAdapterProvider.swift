@@ -21,6 +21,7 @@ public class MSPAdNetworkAdapterProvider: AdNetworkAdapterProvider {
     
     public var googleManager: AdNetworkManager?
     
+    public var adNetWorkAdapter: AdNetworkAdapter?
     
     public init() {
         
@@ -30,9 +31,11 @@ public class MSPAdNetworkAdapterProvider: AdNetworkAdapterProvider {
         print("msp begin get adnetwork adapter")
         if adNetwork.name == "Prebid" {
             var prebidAdLoader = PrebidAdLoader()
+            self.adNetWorkAdapter = prebidAdLoader
             return prebidAdLoader
         } else if adNetwork.name == "Google" {
             var gadAdLoader = googleManager?.getAdNetworkAdapter()
+            self.adNetWorkAdapter = gadAdLoader
             return gadAdLoader
         }
         return nil
