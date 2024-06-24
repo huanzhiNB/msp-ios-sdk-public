@@ -361,15 +361,14 @@ __attribute__((swift_name("AdListener")))
 - (void)onErrorMsg:(NSString *)msg __attribute__((swift_name("onError(msg:)")));
 @end
 
+__attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("AdLoader")))
 @interface SharedAdLoader : SharedBase
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
 + (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
 - (void)loadAdPlacementId:(NSString *)placementId adListener:(id<SharedAdListener>)adListener context:(id)context adRequest:(SharedAdRequest *)adRequest __attribute__((swift_name("loadAd(placementId:adListener:context:adRequest:)")));
 @property id<SharedAdNetworkAdapter> _Nullable adNetworkAdapter __attribute__((swift_name("adNetworkAdapter")));
-@property id<SharedAdNetworkAdapterProvider> _Nullable adNetworkAdapterProvider __attribute__((swift_name("adNetworkAdapterProvider")));
 @property SharedBidLoader * _Nullable bidLoader __attribute__((swift_name("bidLoader")));
-@property id<SharedBidLoaderProvider> _Nullable bidLoaderProvider __attribute__((swift_name("bidLoaderProvider")));
 @end
 
 __attribute__((swift_name("AdNetworkManager")))
