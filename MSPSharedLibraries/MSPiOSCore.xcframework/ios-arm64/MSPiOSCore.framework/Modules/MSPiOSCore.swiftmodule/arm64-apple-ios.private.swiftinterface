@@ -95,7 +95,8 @@ public protocol AdNetworkAdapterProvider {
 public protocol BidLoaderProvider {
   func getBidLoader() -> MSPiOSCore.BidLoader
 }
-@_hasMissingDesignatedInitializers open class AdNetworkManager {
+open class AdNetworkManager {
+  public init()
   open func getAdNetworkAdapter() -> (any MSPiOSCore.AdNetworkAdapter)?
   @objc deinit
 }
