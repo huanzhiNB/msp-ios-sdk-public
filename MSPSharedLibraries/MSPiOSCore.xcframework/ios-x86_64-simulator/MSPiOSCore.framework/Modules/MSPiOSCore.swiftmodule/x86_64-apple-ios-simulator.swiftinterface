@@ -100,7 +100,45 @@ open class AdNetworkManager {
   open func getAdNetworkAdapter() -> (any MSPiOSCore.AdNetworkAdapter)?
   @objc deinit
 }
-@_hasMissingDesignatedInitializers open class NativeAd : MSPiOSCore.MSPAd {
+open class NativeAd : MSPiOSCore.MSPAd {
+  public var title: Swift.String
+  public var body: Swift.String
+  public var advertiser: Swift.String
+  public var callToAction: Swift.String
+  public var optionsView: Any?
+  public var mediaView: Any?
+  public var mediaController: (any MSPiOSCore.MediaController)?
+  public var nativeAdView: Any?
+  public init(adNetworkAdapter: any MSPiOSCore.AdNetworkAdapter, builder: MSPiOSCore.NativeAd.Builder)
+  public init(adNetworkAdapter: any MSPiOSCore.AdNetworkAdapter, title: Swift.String, body: Swift.String, advertiser: Swift.String, callToAction: Swift.String)
+  public func prepareViewForInteraction(nativeAdView: Any)
+  public class Builder {
+    final public let adNetworkAdapter: any MSPiOSCore.AdNetworkAdapter
+    public var title: Swift.String
+    public var body: Swift.String
+    public var advertiser: Swift.String
+    public var callToAction: Swift.String
+    public var optionsView: Any?
+    public var mediaView: Any?
+    public var mediaController: (any MSPiOSCore.MediaController)?
+    public init(adNetworkAdapter: any MSPiOSCore.AdNetworkAdapter)
+    @discardableResult
+    public func title(_ title: Swift.String) -> MSPiOSCore.NativeAd.Builder
+    @discardableResult
+    public func body(_ body: Swift.String) -> MSPiOSCore.NativeAd.Builder
+    @discardableResult
+    public func advertiser(_ advertiser: Swift.String) -> MSPiOSCore.NativeAd.Builder
+    @discardableResult
+    public func callToAction(_ callToAction: Swift.String) -> MSPiOSCore.NativeAd.Builder
+    @discardableResult
+    public func optionsView(_ optionsView: Any) -> MSPiOSCore.NativeAd.Builder
+    @discardableResult
+    public func mediaView(_ mediaView: Any) -> MSPiOSCore.NativeAd.Builder
+    @discardableResult
+    public func mediaController(_ mediaController: any MSPiOSCore.MediaController) -> MSPiOSCore.NativeAd.Builder
+    public func build() -> MSPiOSCore.NativeAd
+    @objc deinit
+  }
   @objc deinit
 }
 public protocol FacebookBidTokenProvider {

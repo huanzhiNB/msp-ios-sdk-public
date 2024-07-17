@@ -2872,6 +2872,1858 @@
         "printedName": "NativeAd",
         "children": [
           {
+            "kind": "Var",
+            "name": "title",
+            "printedName": "title",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MSPiOSCore8NativeAdC5titleSSvp",
+            "mangledName": "$s10MSPiOSCore8NativeAdC5titleSSvp",
+            "moduleName": "MSPiOSCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MSPiOSCore8NativeAdC5titleSSvg",
+                "mangledName": "$s10MSPiOSCore8NativeAdC5titleSSvg",
+                "moduleName": "MSPiOSCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MSPiOSCore8NativeAdC5titleSSvs",
+                "mangledName": "$s10MSPiOSCore8NativeAdC5titleSSvs",
+                "moduleName": "MSPiOSCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MSPiOSCore8NativeAdC5titleSSvM",
+                "mangledName": "$s10MSPiOSCore8NativeAdC5titleSSvM",
+                "moduleName": "MSPiOSCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MSPiOSCore8NativeAdC4bodySSvp",
+            "mangledName": "$s10MSPiOSCore8NativeAdC4bodySSvp",
+            "moduleName": "MSPiOSCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MSPiOSCore8NativeAdC4bodySSvg",
+                "mangledName": "$s10MSPiOSCore8NativeAdC4bodySSvg",
+                "moduleName": "MSPiOSCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MSPiOSCore8NativeAdC4bodySSvs",
+                "mangledName": "$s10MSPiOSCore8NativeAdC4bodySSvs",
+                "moduleName": "MSPiOSCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MSPiOSCore8NativeAdC4bodySSvM",
+                "mangledName": "$s10MSPiOSCore8NativeAdC4bodySSvM",
+                "moduleName": "MSPiOSCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "advertiser",
+            "printedName": "advertiser",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MSPiOSCore8NativeAdC10advertiserSSvp",
+            "mangledName": "$s10MSPiOSCore8NativeAdC10advertiserSSvp",
+            "moduleName": "MSPiOSCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MSPiOSCore8NativeAdC10advertiserSSvg",
+                "mangledName": "$s10MSPiOSCore8NativeAdC10advertiserSSvg",
+                "moduleName": "MSPiOSCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MSPiOSCore8NativeAdC10advertiserSSvs",
+                "mangledName": "$s10MSPiOSCore8NativeAdC10advertiserSSvs",
+                "moduleName": "MSPiOSCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MSPiOSCore8NativeAdC10advertiserSSvM",
+                "mangledName": "$s10MSPiOSCore8NativeAdC10advertiserSSvM",
+                "moduleName": "MSPiOSCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "callToAction",
+            "printedName": "callToAction",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MSPiOSCore8NativeAdC12callToActionSSvp",
+            "mangledName": "$s10MSPiOSCore8NativeAdC12callToActionSSvp",
+            "moduleName": "MSPiOSCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MSPiOSCore8NativeAdC12callToActionSSvg",
+                "mangledName": "$s10MSPiOSCore8NativeAdC12callToActionSSvg",
+                "moduleName": "MSPiOSCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MSPiOSCore8NativeAdC12callToActionSSvs",
+                "mangledName": "$s10MSPiOSCore8NativeAdC12callToActionSSvs",
+                "moduleName": "MSPiOSCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MSPiOSCore8NativeAdC12callToActionSSvM",
+                "mangledName": "$s10MSPiOSCore8NativeAdC12callToActionSSvM",
+                "moduleName": "MSPiOSCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "optionsView",
+            "printedName": "optionsView",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MSPiOSCore8NativeAdC11optionsViewypSgvp",
+            "mangledName": "$s10MSPiOSCore8NativeAdC11optionsViewypSgvp",
+            "moduleName": "MSPiOSCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MSPiOSCore8NativeAdC11optionsViewypSgvg",
+                "mangledName": "$s10MSPiOSCore8NativeAdC11optionsViewypSgvg",
+                "moduleName": "MSPiOSCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MSPiOSCore8NativeAdC11optionsViewypSgvs",
+                "mangledName": "$s10MSPiOSCore8NativeAdC11optionsViewypSgvs",
+                "moduleName": "MSPiOSCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MSPiOSCore8NativeAdC11optionsViewypSgvM",
+                "mangledName": "$s10MSPiOSCore8NativeAdC11optionsViewypSgvM",
+                "moduleName": "MSPiOSCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "mediaView",
+            "printedName": "mediaView",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MSPiOSCore8NativeAdC9mediaViewypSgvp",
+            "mangledName": "$s10MSPiOSCore8NativeAdC9mediaViewypSgvp",
+            "moduleName": "MSPiOSCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MSPiOSCore8NativeAdC9mediaViewypSgvg",
+                "mangledName": "$s10MSPiOSCore8NativeAdC9mediaViewypSgvg",
+                "moduleName": "MSPiOSCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MSPiOSCore8NativeAdC9mediaViewypSgvs",
+                "mangledName": "$s10MSPiOSCore8NativeAdC9mediaViewypSgvs",
+                "moduleName": "MSPiOSCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MSPiOSCore8NativeAdC9mediaViewypSgvM",
+                "mangledName": "$s10MSPiOSCore8NativeAdC9mediaViewypSgvM",
+                "moduleName": "MSPiOSCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "mediaController",
+            "printedName": "mediaController",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any MSPiOSCore.MediaController)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MediaController",
+                    "printedName": "any MSPiOSCore.MediaController",
+                    "usr": "s:10MSPiOSCore15MediaControllerP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MSPiOSCore8NativeAdC15mediaControllerAA05MediaF0_pSgvp",
+            "mangledName": "$s10MSPiOSCore8NativeAdC15mediaControllerAA05MediaF0_pSgvp",
+            "moduleName": "MSPiOSCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any MSPiOSCore.MediaController)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MediaController",
+                        "printedName": "any MSPiOSCore.MediaController",
+                        "usr": "s:10MSPiOSCore15MediaControllerP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MSPiOSCore8NativeAdC15mediaControllerAA05MediaF0_pSgvg",
+                "mangledName": "$s10MSPiOSCore8NativeAdC15mediaControllerAA05MediaF0_pSgvg",
+                "moduleName": "MSPiOSCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any MSPiOSCore.MediaController)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MediaController",
+                        "printedName": "any MSPiOSCore.MediaController",
+                        "usr": "s:10MSPiOSCore15MediaControllerP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MSPiOSCore8NativeAdC15mediaControllerAA05MediaF0_pSgvs",
+                "mangledName": "$s10MSPiOSCore8NativeAdC15mediaControllerAA05MediaF0_pSgvs",
+                "moduleName": "MSPiOSCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MSPiOSCore8NativeAdC15mediaControllerAA05MediaF0_pSgvM",
+                "mangledName": "$s10MSPiOSCore8NativeAdC15mediaControllerAA05MediaF0_pSgvM",
+                "moduleName": "MSPiOSCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "nativeAdView",
+            "printedName": "nativeAdView",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MSPiOSCore8NativeAdC06nativeD4ViewypSgvp",
+            "mangledName": "$s10MSPiOSCore8NativeAdC06nativeD4ViewypSgvp",
+            "moduleName": "MSPiOSCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MSPiOSCore8NativeAdC06nativeD4ViewypSgvg",
+                "mangledName": "$s10MSPiOSCore8NativeAdC06nativeD4ViewypSgvg",
+                "moduleName": "MSPiOSCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MSPiOSCore8NativeAdC06nativeD4ViewypSgvs",
+                "mangledName": "$s10MSPiOSCore8NativeAdC06nativeD4ViewypSgvs",
+                "moduleName": "MSPiOSCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MSPiOSCore8NativeAdC06nativeD4ViewypSgvM",
+                "mangledName": "$s10MSPiOSCore8NativeAdC06nativeD4ViewypSgvM",
+                "moduleName": "MSPiOSCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(adNetworkAdapter:builder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NativeAd",
+                "printedName": "MSPiOSCore.NativeAd",
+                "usr": "s:10MSPiOSCore8NativeAdC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdNetworkAdapter",
+                "printedName": "any MSPiOSCore.AdNetworkAdapter",
+                "usr": "s:10MSPiOSCore16AdNetworkAdapterP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Builder",
+                "printedName": "MSPiOSCore.NativeAd.Builder",
+                "usr": "s:10MSPiOSCore8NativeAdC7BuilderC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10MSPiOSCore8NativeAdC16adNetworkAdapter7builderAcA0dfG0_p_AC7BuilderCtcfc",
+            "mangledName": "$s10MSPiOSCore8NativeAdC16adNetworkAdapter7builderAcA0dfG0_p_AC7BuilderCtcfc",
+            "moduleName": "MSPiOSCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(adNetworkAdapter:title:body:advertiser:callToAction:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NativeAd",
+                "printedName": "MSPiOSCore.NativeAd",
+                "usr": "s:10MSPiOSCore8NativeAdC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdNetworkAdapter",
+                "printedName": "any MSPiOSCore.AdNetworkAdapter",
+                "usr": "s:10MSPiOSCore16AdNetworkAdapterP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10MSPiOSCore8NativeAdC16adNetworkAdapter5title4body10advertiser12callToActionAcA0dfG0_p_S4Stcfc",
+            "mangledName": "$s10MSPiOSCore8NativeAdC16adNetworkAdapter5title4body10advertiser12callToActionAcA0dfG0_p_S4Stcfc",
+            "moduleName": "MSPiOSCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "prepareViewForInteraction",
+            "printedName": "prepareViewForInteraction(nativeAdView:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10MSPiOSCore8NativeAdC25prepareViewForInteraction06nativedF0yyp_tF",
+            "mangledName": "$s10MSPiOSCore8NativeAdC25prepareViewForInteraction06nativedF0yyp_tF",
+            "moduleName": "MSPiOSCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Builder",
+            "printedName": "Builder",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "adNetworkAdapter",
+                "printedName": "adNetworkAdapter",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdNetworkAdapter",
+                    "printedName": "any MSPiOSCore.AdNetworkAdapter",
+                    "usr": "s:10MSPiOSCore16AdNetworkAdapterP"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10MSPiOSCore8NativeAdC7BuilderC16adNetworkAdapterAA0dgH0_pvp",
+                "mangledName": "$s10MSPiOSCore8NativeAdC7BuilderC16adNetworkAdapterAA0dgH0_pvp",
+                "moduleName": "MSPiOSCore",
+                "declAttributes": [
+                  "Final",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdNetworkAdapter",
+                        "printedName": "any MSPiOSCore.AdNetworkAdapter",
+                        "usr": "s:10MSPiOSCore16AdNetworkAdapterP"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10MSPiOSCore8NativeAdC7BuilderC16adNetworkAdapterAA0dgH0_pvg",
+                    "mangledName": "$s10MSPiOSCore8NativeAdC7BuilderC16adNetworkAdapterAA0dgH0_pvg",
+                    "moduleName": "MSPiOSCore",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Final"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "title",
+                "printedName": "title",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10MSPiOSCore8NativeAdC7BuilderC5titleSSvp",
+                "mangledName": "$s10MSPiOSCore8NativeAdC7BuilderC5titleSSvp",
+                "moduleName": "MSPiOSCore",
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10MSPiOSCore8NativeAdC7BuilderC5titleSSvg",
+                    "mangledName": "$s10MSPiOSCore8NativeAdC7BuilderC5titleSSvg",
+                    "moduleName": "MSPiOSCore",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10MSPiOSCore8NativeAdC7BuilderC5titleSSvs",
+                    "mangledName": "$s10MSPiOSCore8NativeAdC7BuilderC5titleSSvs",
+                    "moduleName": "MSPiOSCore",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10MSPiOSCore8NativeAdC7BuilderC5titleSSvM",
+                    "mangledName": "$s10MSPiOSCore8NativeAdC7BuilderC5titleSSvM",
+                    "moduleName": "MSPiOSCore",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "body",
+                "printedName": "body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10MSPiOSCore8NativeAdC7BuilderC4bodySSvp",
+                "mangledName": "$s10MSPiOSCore8NativeAdC7BuilderC4bodySSvp",
+                "moduleName": "MSPiOSCore",
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10MSPiOSCore8NativeAdC7BuilderC4bodySSvg",
+                    "mangledName": "$s10MSPiOSCore8NativeAdC7BuilderC4bodySSvg",
+                    "moduleName": "MSPiOSCore",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10MSPiOSCore8NativeAdC7BuilderC4bodySSvs",
+                    "mangledName": "$s10MSPiOSCore8NativeAdC7BuilderC4bodySSvs",
+                    "moduleName": "MSPiOSCore",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10MSPiOSCore8NativeAdC7BuilderC4bodySSvM",
+                    "mangledName": "$s10MSPiOSCore8NativeAdC7BuilderC4bodySSvM",
+                    "moduleName": "MSPiOSCore",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "advertiser",
+                "printedName": "advertiser",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10MSPiOSCore8NativeAdC7BuilderC10advertiserSSvp",
+                "mangledName": "$s10MSPiOSCore8NativeAdC7BuilderC10advertiserSSvp",
+                "moduleName": "MSPiOSCore",
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10MSPiOSCore8NativeAdC7BuilderC10advertiserSSvg",
+                    "mangledName": "$s10MSPiOSCore8NativeAdC7BuilderC10advertiserSSvg",
+                    "moduleName": "MSPiOSCore",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10MSPiOSCore8NativeAdC7BuilderC10advertiserSSvs",
+                    "mangledName": "$s10MSPiOSCore8NativeAdC7BuilderC10advertiserSSvs",
+                    "moduleName": "MSPiOSCore",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10MSPiOSCore8NativeAdC7BuilderC10advertiserSSvM",
+                    "mangledName": "$s10MSPiOSCore8NativeAdC7BuilderC10advertiserSSvM",
+                    "moduleName": "MSPiOSCore",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "callToAction",
+                "printedName": "callToAction",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10MSPiOSCore8NativeAdC7BuilderC12callToActionSSvp",
+                "mangledName": "$s10MSPiOSCore8NativeAdC7BuilderC12callToActionSSvp",
+                "moduleName": "MSPiOSCore",
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10MSPiOSCore8NativeAdC7BuilderC12callToActionSSvg",
+                    "mangledName": "$s10MSPiOSCore8NativeAdC7BuilderC12callToActionSSvg",
+                    "moduleName": "MSPiOSCore",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10MSPiOSCore8NativeAdC7BuilderC12callToActionSSvs",
+                    "mangledName": "$s10MSPiOSCore8NativeAdC7BuilderC12callToActionSSvs",
+                    "moduleName": "MSPiOSCore",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10MSPiOSCore8NativeAdC7BuilderC12callToActionSSvM",
+                    "mangledName": "$s10MSPiOSCore8NativeAdC7BuilderC12callToActionSSvM",
+                    "moduleName": "MSPiOSCore",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "optionsView",
+                "printedName": "optionsView",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10MSPiOSCore8NativeAdC7BuilderC11optionsViewypSgvp",
+                "mangledName": "$s10MSPiOSCore8NativeAdC7BuilderC11optionsViewypSgvp",
+                "moduleName": "MSPiOSCore",
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Any?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10MSPiOSCore8NativeAdC7BuilderC11optionsViewypSgvg",
+                    "mangledName": "$s10MSPiOSCore8NativeAdC7BuilderC11optionsViewypSgvg",
+                    "moduleName": "MSPiOSCore",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Any?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10MSPiOSCore8NativeAdC7BuilderC11optionsViewypSgvs",
+                    "mangledName": "$s10MSPiOSCore8NativeAdC7BuilderC11optionsViewypSgvs",
+                    "moduleName": "MSPiOSCore",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10MSPiOSCore8NativeAdC7BuilderC11optionsViewypSgvM",
+                    "mangledName": "$s10MSPiOSCore8NativeAdC7BuilderC11optionsViewypSgvM",
+                    "moduleName": "MSPiOSCore",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "mediaView",
+                "printedName": "mediaView",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10MSPiOSCore8NativeAdC7BuilderC9mediaViewypSgvp",
+                "mangledName": "$s10MSPiOSCore8NativeAdC7BuilderC9mediaViewypSgvp",
+                "moduleName": "MSPiOSCore",
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Any?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10MSPiOSCore8NativeAdC7BuilderC9mediaViewypSgvg",
+                    "mangledName": "$s10MSPiOSCore8NativeAdC7BuilderC9mediaViewypSgvg",
+                    "moduleName": "MSPiOSCore",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Any?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10MSPiOSCore8NativeAdC7BuilderC9mediaViewypSgvs",
+                    "mangledName": "$s10MSPiOSCore8NativeAdC7BuilderC9mediaViewypSgvs",
+                    "moduleName": "MSPiOSCore",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10MSPiOSCore8NativeAdC7BuilderC9mediaViewypSgvM",
+                    "mangledName": "$s10MSPiOSCore8NativeAdC7BuilderC9mediaViewypSgvM",
+                    "moduleName": "MSPiOSCore",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "mediaController",
+                "printedName": "mediaController",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any MSPiOSCore.MediaController)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MediaController",
+                        "printedName": "any MSPiOSCore.MediaController",
+                        "usr": "s:10MSPiOSCore15MediaControllerP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10MSPiOSCore8NativeAdC7BuilderC15mediaControllerAA05MediaG0_pSgvp",
+                "mangledName": "$s10MSPiOSCore8NativeAdC7BuilderC15mediaControllerAA05MediaG0_pSgvp",
+                "moduleName": "MSPiOSCore",
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any MSPiOSCore.MediaController)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "MediaController",
+                            "printedName": "any MSPiOSCore.MediaController",
+                            "usr": "s:10MSPiOSCore15MediaControllerP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10MSPiOSCore8NativeAdC7BuilderC15mediaControllerAA05MediaG0_pSgvg",
+                    "mangledName": "$s10MSPiOSCore8NativeAdC7BuilderC15mediaControllerAA05MediaG0_pSgvg",
+                    "moduleName": "MSPiOSCore",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any MSPiOSCore.MediaController)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "MediaController",
+                            "printedName": "any MSPiOSCore.MediaController",
+                            "usr": "s:10MSPiOSCore15MediaControllerP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10MSPiOSCore8NativeAdC7BuilderC15mediaControllerAA05MediaG0_pSgvs",
+                    "mangledName": "$s10MSPiOSCore8NativeAdC7BuilderC15mediaControllerAA05MediaG0_pSgvs",
+                    "moduleName": "MSPiOSCore",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10MSPiOSCore8NativeAdC7BuilderC15mediaControllerAA05MediaG0_pSgvM",
+                    "mangledName": "$s10MSPiOSCore8NativeAdC7BuilderC15mediaControllerAA05MediaG0_pSgvM",
+                    "moduleName": "MSPiOSCore",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(adNetworkAdapter:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "MSPiOSCore.NativeAd.Builder",
+                    "usr": "s:10MSPiOSCore8NativeAdC7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdNetworkAdapter",
+                    "printedName": "any MSPiOSCore.AdNetworkAdapter",
+                    "usr": "s:10MSPiOSCore16AdNetworkAdapterP"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:10MSPiOSCore8NativeAdC7BuilderC16adNetworkAdapterAeA0dgH0_p_tcfc",
+                "mangledName": "$s10MSPiOSCore8NativeAdC7BuilderC16adNetworkAdapterAeA0dgH0_p_tcfc",
+                "moduleName": "MSPiOSCore",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Function",
+                "name": "title",
+                "printedName": "title(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "MSPiOSCore.NativeAd.Builder",
+                    "usr": "s:10MSPiOSCore8NativeAdC7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:10MSPiOSCore8NativeAdC7BuilderC5titleyAESSF",
+                "mangledName": "$s10MSPiOSCore8NativeAdC7BuilderC5titleyAESSF",
+                "moduleName": "MSPiOSCore",
+                "declAttributes": [
+                  "AccessControl",
+                  "DiscardableResult"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "body",
+                "printedName": "body(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "MSPiOSCore.NativeAd.Builder",
+                    "usr": "s:10MSPiOSCore8NativeAdC7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:10MSPiOSCore8NativeAdC7BuilderC4bodyyAESSF",
+                "mangledName": "$s10MSPiOSCore8NativeAdC7BuilderC4bodyyAESSF",
+                "moduleName": "MSPiOSCore",
+                "declAttributes": [
+                  "AccessControl",
+                  "DiscardableResult"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "advertiser",
+                "printedName": "advertiser(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "MSPiOSCore.NativeAd.Builder",
+                    "usr": "s:10MSPiOSCore8NativeAdC7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:10MSPiOSCore8NativeAdC7BuilderC10advertiseryAESSF",
+                "mangledName": "$s10MSPiOSCore8NativeAdC7BuilderC10advertiseryAESSF",
+                "moduleName": "MSPiOSCore",
+                "declAttributes": [
+                  "AccessControl",
+                  "DiscardableResult"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "callToAction",
+                "printedName": "callToAction(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "MSPiOSCore.NativeAd.Builder",
+                    "usr": "s:10MSPiOSCore8NativeAdC7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:10MSPiOSCore8NativeAdC7BuilderC12callToActionyAESSF",
+                "mangledName": "$s10MSPiOSCore8NativeAdC7BuilderC12callToActionyAESSF",
+                "moduleName": "MSPiOSCore",
+                "declAttributes": [
+                  "AccessControl",
+                  "DiscardableResult"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "optionsView",
+                "printedName": "optionsView(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "MSPiOSCore.NativeAd.Builder",
+                    "usr": "s:10MSPiOSCore8NativeAdC7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:10MSPiOSCore8NativeAdC7BuilderC11optionsViewyAEypF",
+                "mangledName": "$s10MSPiOSCore8NativeAdC7BuilderC11optionsViewyAEypF",
+                "moduleName": "MSPiOSCore",
+                "declAttributes": [
+                  "AccessControl",
+                  "DiscardableResult"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "mediaView",
+                "printedName": "mediaView(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "MSPiOSCore.NativeAd.Builder",
+                    "usr": "s:10MSPiOSCore8NativeAdC7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:10MSPiOSCore8NativeAdC7BuilderC9mediaViewyAEypF",
+                "mangledName": "$s10MSPiOSCore8NativeAdC7BuilderC9mediaViewyAEypF",
+                "moduleName": "MSPiOSCore",
+                "declAttributes": [
+                  "AccessControl",
+                  "DiscardableResult"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "mediaController",
+                "printedName": "mediaController(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "MSPiOSCore.NativeAd.Builder",
+                    "usr": "s:10MSPiOSCore8NativeAdC7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MediaController",
+                    "printedName": "any MSPiOSCore.MediaController",
+                    "usr": "s:10MSPiOSCore15MediaControllerP"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:10MSPiOSCore8NativeAdC7BuilderC15mediaControlleryAeA05MediaG0_pF",
+                "mangledName": "$s10MSPiOSCore8NativeAdC7BuilderC15mediaControlleryAeA05MediaG0_pF",
+                "moduleName": "MSPiOSCore",
+                "declAttributes": [
+                  "AccessControl",
+                  "DiscardableResult"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "build",
+                "printedName": "build()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NativeAd",
+                    "printedName": "MSPiOSCore.NativeAd",
+                    "usr": "s:10MSPiOSCore8NativeAdC"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:10MSPiOSCore8NativeAdC7BuilderC5buildACyF",
+                "mangledName": "$s10MSPiOSCore8NativeAdC7BuilderC5buildACyF",
+                "moduleName": "MSPiOSCore",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Class",
+            "usr": "s:10MSPiOSCore8NativeAdC7BuilderC",
+            "mangledName": "$s10MSPiOSCore8NativeAdC7BuilderC",
+            "moduleName": "MSPiOSCore",
+            "declAttributes": [
+              "AccessControl"
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(adNetworkAdapter:)",
@@ -2910,7 +4762,6 @@
           "AccessControl"
         ],
         "superclassUsr": "s:10MSPiOSCore5MSPAdC",
-        "hasMissingDesignatedInitializers": true,
         "superclassNames": [
           "MSPiOSCore.MSPAd"
         ]
@@ -4820,28 +6671,28 @@
     {
       "filePath": "\/Users\/huanzhizhang\/Huanzhi\/msp-ios-core\/MSPiOSCore\/MSPiOSCore\/api\/NativeAd.swift",
       "kind": "StringLiteral",
-      "offset": 964,
+      "offset": 1440,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/huanzhizhang\/Huanzhi\/msp-ios-core\/MSPiOSCore\/MSPiOSCore\/api\/NativeAd.swift",
       "kind": "StringLiteral",
-      "offset": 994,
+      "offset": 1477,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/huanzhizhang\/Huanzhi\/msp-ios-core\/MSPiOSCore\/MSPiOSCore\/api\/NativeAd.swift",
       "kind": "StringLiteral",
-      "offset": 1030,
+      "offset": 1520,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/huanzhizhang\/Huanzhi\/msp-ios-core\/MSPiOSCore\/MSPiOSCore\/api\/NativeAd.swift",
       "kind": "StringLiteral",
-      "offset": 1068,
+      "offset": 1565,
       "length": 2,
       "value": "\"\""
     },
