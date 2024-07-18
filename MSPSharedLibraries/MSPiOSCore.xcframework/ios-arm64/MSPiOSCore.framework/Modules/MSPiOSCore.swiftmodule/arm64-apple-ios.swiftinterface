@@ -4,6 +4,7 @@
 import Foundation
 @_exported import MSPiOSCore
 import Swift
+import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
@@ -143,6 +144,30 @@ open class NativeAd : MSPiOSCore.MSPAd {
 }
 public protocol FacebookBidTokenProvider {
   func fetch(completeListener: any MSPiOSCore.FacebookBidTokenListener, context: Any)
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class NativeAdView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public var nativeAd: MSPiOSCore.NativeAd
+  @_Concurrency.MainActor(unsafe) public var rootViewController: UIKit.UIViewController
+  @_Concurrency.MainActor(unsafe) public var nativeAdViewBinder: MSPiOSCore.NativeAdViewBinder
+  @_Concurrency.MainActor(unsafe) public var titleLabel: UIKit.UILabel?
+  @_Concurrency.MainActor(unsafe) public var bodyLabel: UIKit.UILabel?
+  @_Concurrency.MainActor(unsafe) public var advertiserLabel: UIKit.UILabel?
+  @_Concurrency.MainActor(unsafe) public var callToActionButton: UIKit.UIButton?
+  @_Concurrency.MainActor(unsafe) public var optionView: UIKit.UIView?
+  @_Concurrency.MainActor(unsafe) public var mediaView: UIKit.UIView?
+  @_Concurrency.MainActor(unsafe) public init(nativeAd: MSPiOSCore.NativeAd, rootViewController: UIKit.UIViewController, nativeAdViewBinder: MSPiOSCore.NativeAdViewBinder)
+  @objc deinit
+}
+open class NativeAdViewBinder {
+  public var titleLabel: UIKit.UILabel?
+  public var bodyLabel: UIKit.UILabel?
+  public var advertiserLabel: UIKit.UILabel?
+  public var callToActionButton: UIKit.UIButton?
+  public var optionView: UIKit.UIView?
+  public var mediaView: UIKit.UIView?
+  public init(nativeAd: MSPiOSCore.NativeAd)
+  open func setUpViews(parentView: UIKit.UIView)
+  @objc deinit
 }
 public protocol AdapterParameters {
   func getParameters() -> [Swift.String : Any]?
