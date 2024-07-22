@@ -66,6 +66,7 @@ public struct AdSize {
 public protocol FacebookBidTokenListener {
   func onComplete(bidToken: Swift.String)
 }
+public func handleAdLoaded(ad: MSPiOSCore.MSPAd, listener: any MSPiOSCore.AdListener, adRequest: MSPiOSCore.AdRequest)
 public protocol BidListener {
   func onBidResponse(bidResponse: Any, adNetwork: MSPiOSCore.AdNetwork)
   func onError(msg: Swift.String)
@@ -237,6 +238,13 @@ public struct Geo {
   public let lat: Swift.String
   public let lon: Swift.String
   public init(city: Swift.String = "", stateCode: Swift.String = "", zipCode: Swift.String = "", lat: Swift.String = "", lon: Swift.String = "")
+}
+@_hasMissingDesignatedInitializers public class AdCache {
+  public static let shared: MSPiOSCore.AdCache
+  public func peakAd(placementId: Swift.String) -> MSPiOSCore.MSPAd?
+  public func getAd(placementId: Swift.String) -> MSPiOSCore.MSPAd?
+  public func saveAd(placementId: Swift.String, ad: MSPiOSCore.MSPAd)
+  @objc deinit
 }
 extension MSPiOSCore.AdapterAdLoadError : Swift.Equatable {}
 extension MSPiOSCore.AdapterAdLoadError : Swift.Hashable {}
