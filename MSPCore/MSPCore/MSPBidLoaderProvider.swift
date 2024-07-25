@@ -7,11 +7,12 @@
 
 import Foundation
 import PrebidAdapter
-//import MSPiOSCore
-import shared
+import MSPiOSCore
+//import shared
 
 public class MSPBidLoaderProvider: BidLoaderProvider {
     public var googleQueryInfoFetcher: GoogleQueryInfoFetcher?
+    public var facebookBidTokenProvider: FacebookBidTokenProvider?
     public var bidLoader: BidLoader?
     
     public init() {
@@ -19,8 +20,7 @@ public class MSPBidLoaderProvider: BidLoaderProvider {
     }
     
     public func getBidLoader() -> BidLoader {
-        print("msp get bid load without google query info fetcher")
-        let bidLoader = PrebidBidLoader(googleQueryInfoFetcher: googleQueryInfoFetcher ?? GoogleQueryInfoFetcherStandalone(), facebookBidTokenProvider: FacebookBidTokenProviderStandalone())
+        let bidLoader = PrebidBidLoader(googleQueryInfoFetcher: googleQueryInfoFetcher ?? GoogleQueryInfoFetcherStandalone(), facebookBidTokenProvider: facebookBidTokenProvider ?? FacebookBidTokenProviderStandalone())
         self.bidLoader = bidLoader
         return bidLoader
     }

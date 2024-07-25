@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "MSPCore"
-  spec.version      = "0.0.12"
+  spec.version      = "0.0.22"
   spec.summary      = "An utility helper for MSP"
 
   spec.ios.deployment_target = '13.0'
@@ -94,8 +94,9 @@ Pod::Spec.new do |spec|
   spec.source_files  = "MSPCore/MSPCore/**/*.{h,m,swift}"
   spec.exclude_files = "Classes/Exclude"
 
-  spec.dependency 'MSPSharedLibraries', "0.0.12"
-  spec.vendored_frameworks= "MSPCore/PrebidAdapter.xcframework" #, "PrebidMobile.xcframework", "MSPiOSCore.xcframework"
+  spec.dependency 'MSPSharedLibraries', '0.0.19'
+  spec.dependency 'PrebidAdapter', '0.0.21'
+  #spec.vendored_frameworks= "MSPCore/PrebidAdapter.xcframework"#, "PrebidMobile.xcframework", "MSPiOSCore.xcframework"
 
   #spec.pod_target_xcconfig = {
   #  'HEADER_SEARCH_PATHS' => '$(PODS_TARGET_SRCROOT)/PrebidMobile.xcframework/Headers $(PODS_TARGET_SRCROOT)/MSPiOSCore.xcframework/Headers'

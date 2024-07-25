@@ -1,19 +1,13 @@
-//
-//  MSPHelper.swift
-//  MSPUtility
-//
-//  Created by Huanzhi Zhang on 1/9/24.
-//
-
 import Foundation
-//import MSPiOSCore
-import shared
+import MSPiOSCore
+//import shared
 import PrebidAdapter
+import PrebidMobile
+import UIKit
 
-
-public class MSPHelper {
+public class MSP {
     
-    public static let shared = MSPHelper()
+    public static let shared = MSP()
     public var numInitWaitingForCallbacks = 0;
     public var sdkInitListener: MSPInitListener?
     
@@ -22,25 +16,46 @@ public class MSPHelper {
     
     public func initMSP(initParams: InitializationParameters, sdkInitListener: MSPInitListener?) {
         // This is a temporary solution to replace MSPManager class in kotlin to solve the Kotlin singleton issue
-        print("msp init SDK")
-        numInitWaitingForCallbacks = 2 // For current use case it means 2 adnetwork: prebid, google
+        let managers: [AdNetworkManager?] = [adNetworkAdapterProvider.googleManager, adNetworkAdapterProvider.metaManager, adNetworkAdapterProvider.novaManager]
+        numInitWaitingForCallbacks = 1 //default vaule is 1 for prebid sdk is alwasys in the dependency
+        for adManager in managers {
+            if let manager = adManager {
+                numInitWaitingForCallbacks += 1
+            }
+        }
         self.sdkInitListener = sdkInitListener
         var adapterInitListener = MSPAdapterInitListener()
         adNetworkAdapterProvider.googleManager?.getAdNetworkAdapter()?.initialize(initParams: initParams, adapterInitListener: adapterInitListener, context: nil)
-        PrebidAdLoader().initialize(initParams: initParams, adapterInitListener: adapterInitListener, context: nil)
+        adNetworkAdapterProvider.metaManager?.getAdNetworkAdapter()?.initialize(initParams: initParams, adapterInitListener: adapterInitListener, context: nil)
+        adNetworkAdapterProvider.novaManager?.getAdNetworkAdapter()?.initialize(initParams: initParams, adapterInitListener: adapterInitListener, context: nil)
+        PrebidAdapter().initialize(initParams: initParams, adapterInitListener: adapterInitListener, context: nil)
+        
+        if let initParamsImp = initParams as? InitializationParametersImp,
+           let sourceApp = initParamsImp.sourceApp {
+            Targeting.shared.sourceapp = sourceApp
+        }
+        Prebid.shared.shareGeoLocation = true
     }
     
     public class MSPAdapterInitListener: AdapterInitListener {
         public func onComplete(adNetwork: AdNetwork, adapterInitStatus: AdapterInitStatus, message: String) {
-            MSPHelper.shared.numInitWaitingForCallbacks = MSPHelper.shared.numInitWaitingForCallbacks - 1
-            if MSPHelper.shared.numInitWaitingForCallbacks == 0{
-                MSPHelper.shared.sdkInitListener?.onComplete(status: .success, message: "")
+            MSP.shared.numInitWaitingForCallbacks = MSP.shared.numInitWaitingForCallbacks - 1
+            if MSP.shared.numInitWaitingForCallbacks == 0 {
+                MSP.shared.sdkInitListener?.onComplete(status: .SUCCESS, message: "")
             }
         }
     }
     
     public func setGoogleManager(googleManager: AdNetworkManager) {
         adNetworkAdapterProvider.googleManager = googleManager
+    }
+    
+    public func setNovaManager(novaManager: AdNetworkManager) {
+        adNetworkAdapterProvider.novaManager = novaManager
+    }
+    
+    public func setMetaManager(metaManager: AdNetworkManager) {
+        adNetworkAdapterProvider.metaManager = metaManager
     }
 }
 
@@ -49,9 +64,12 @@ public class InitializationParametersImp: InitializationParameters {
     public var prebidAPIKey: String //= "sggU8Y1UB6xara62G23qGdcOA8co2O4N_debug"
     public var prebidHostUrl: String //= "https://prebid-server.newsbreak.com/openrtb2/auction"
     
-    public init(prebidAPIKey: String, prebidHostUrl: String) {
+    public var sourceApp: String?
+    
+    public init(prebidAPIKey: String, prebidHostUrl: String, sourceApp: String? = nil) {
         self.prebidAPIKey = prebidAPIKey
         self.prebidHostUrl = prebidHostUrl
+        self.sourceApp = sourceApp
     }
     
     public func getPrebidAPIKey() -> String {
@@ -66,7 +84,7 @@ public class InitializationParametersImp: InitializationParameters {
         return ""
     }
     
-    public func getParameters() -> [String : Any] {
+    public func getParameters() -> [String : Any]? {
         return [String : Any]()
     }
     
@@ -87,9 +105,12 @@ public class InitializationParametersImp: InitializationParameters {
     }
 }
 
-public class iOSAdLoader: BidListener {
+public class MSPAdLoader: BidListener {
     var adListener: AdListener?
     var adRequest: AdRequest?
+    
+    weak var bidLoader: BidLoader?
+    var adNetworkAdapter: AdNetworkAdapter?
 
     var rootViewController: UIViewController?
     
@@ -101,18 +122,16 @@ public class iOSAdLoader: BidListener {
         self.adListener = adListener
         self.adRequest = adRequest
         
-        let bidLoader = MSPHelper.shared.bidLoaderProvider.getBidLoader()
+        self.bidLoader = MSP.shared.bidLoaderProvider.getBidLoader()
         self.rootViewController = rootViewController
-        bidLoader.loadBid(placementId: placementId, adParams: adRequest.customParams, bidListener: self, adRequest: adRequest)
+        bidLoader?.loadBid(placementId: placementId, adParams: adRequest.customParams, bidListener: self, adRequest: adRequest)
     }
     
     public func onBidResponse(bidResponse: Any, adNetwork: AdNetwork) {
-        let adNetworkAdapter = MSPHelper.shared.adNetworkAdapterProvider.getAdNetworkAdapter(adNetwork: adNetwork)
+        adNetworkAdapter = MSP.shared.adNetworkAdapterProvider.getAdNetworkAdapter(adNetwork: adNetwork)
         if let adListener = self.adListener,
            let adRequest = self.adRequest {
             adNetworkAdapter?.loadAdCreative(bidResponse: bidResponse, adListener: adListener, context: self.rootViewController ?? self, adRequest: adRequest)
-        } else {
-            adListener?.onError(msg: "unable to load ad creative")
         }
     }
     
