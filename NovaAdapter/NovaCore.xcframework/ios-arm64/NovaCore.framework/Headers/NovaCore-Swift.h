@@ -645,12 +645,6 @@ typedef SWIFT_ENUM(NSInteger, MetricEvent, open) {
   MetricEventOpenSpotlight = 218,
 };
 
-
-SWIFT_CLASS("_TtC8NovaCore13MetricService")
-@interface MetricService : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
 @class NSString;
 
 SWIFT_CLASS("_TtC8NovaCore20NovaAdMetricReporter")
