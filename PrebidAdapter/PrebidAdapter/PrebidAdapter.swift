@@ -1,18 +1,11 @@
-//
-//  PrebidAdLoader.swift
-//  PrebidAdapter
-//
-//  Created by Huanzhi Zhang on 12/19/23.
-//
-
 import PrebidMobile
 import Foundation
-//import shared
-import MSPiOSCore
+import shared
+//import MSPiOSCore
 import UIKit
 
 @objc public class PrebidAdapter : NSObject, AdNetworkAdapter {
-    public func prepareViewForInteraction(nativeAd: MSPiOSCore.NativeAd, nativeAdView: Any) {
+    public func prepareViewForInteraction(nativeAd: shared.NativeAd, nativeAdView: Any) {
     }
     
     // MARK: - BannerEventHandler
@@ -30,13 +23,13 @@ import UIKit
             Prebid.shared.prebidServerAccountId = initParams.getPrebidAPIKey()
             Prebid.initializeSDK{ status, error in
                 if status == .successed {
-                    adapterInitListener.onComplete(adNetwork: .prebid, adapterInitStatus: .SUCCESS, message: "")
+                    adapterInitListener.onComplete(adNetwork: .prebid, adapterInitStatus: .success, message: "")
                 } else {
-                    adapterInitListener.onComplete(adNetwork: .prebid, adapterInitStatus: .SUCCESS, message: error?.localizedDescription ?? "")
+                    adapterInitListener.onComplete(adNetwork: .prebid, adapterInitStatus: .success, message: error?.localizedDescription ?? "")
                 }
             }
         } catch {
-            adapterInitListener.onComplete(adNetwork: .prebid, adapterInitStatus: .SUCCESS, message: "")
+            adapterInitListener.onComplete(adNetwork: .prebid, adapterInitStatus: .success, message: "")
         }
     }
     
