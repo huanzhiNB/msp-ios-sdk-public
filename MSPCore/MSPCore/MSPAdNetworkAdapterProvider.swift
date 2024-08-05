@@ -7,15 +7,33 @@
 
 import Foundation
 import PrebidAdapter
-import MSPiOSCore
-// shared
+//import MSPiOSCore
+import shared
 import UIKit
 
 
 
 public class MSPAdNetworkAdapterProvider: AdNetworkAdapterProvider {
+    public func getAdNetworkAdaptersCount() -> Int32 {
+        let managers: [AdNetworkManager?] = [googleManager, metaManager, novaManager]
+        var num = 1 //default vaule is 1 for prebid sdk is alwasys in the dependency
+        for adManager in managers {
+            if let manager = adManager {
+                num += 1
+            }
+        }
+        return Int32(num)
+    }
+    
     public func getAdNetworkAdaptersCount() -> Int {
-        return 2
+        let managers: [AdNetworkManager?] = [googleManager, metaManager, novaManager]
+        var num = 1 //default vaule is 1 for prebid sdk is alwasys in the dependency
+        for adManager in managers {
+            if let manager = adManager {
+                num += 1
+            }
+        }
+        return num
     }
     
     public var rootViewController: UIViewController?
