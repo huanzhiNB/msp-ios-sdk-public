@@ -176,12 +176,10 @@ code_sign_if_enabled() {
 }
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/MSPCore/PrebidAdapter.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/MSPSharedLibraries/PrebidMobile.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/MSPSharedLibraries/MSPiOSCore.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/MSPCore/PrebidAdapter.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/MSPSharedLibraries/PrebidMobile.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/MSPSharedLibraries/MSPiOSCore.framework"
 fi
