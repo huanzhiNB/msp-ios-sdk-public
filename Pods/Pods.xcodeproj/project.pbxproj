@@ -42,19 +42,19 @@
 		2E43777648443C23E271F5160FCF234E /* Pods-MSPCore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MSPCore-dummy.m"; sourceTree = "<group>"; };
 		30F69FBF545DED3F2CF55CC2DB040F1E /* Pods-MSPDemoApp */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-MSPDemoApp"; path = "libPods-MSPDemoApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43A57D16DF80C33F0F92C19711B1A87F /* Pods-MSPDemoApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MSPDemoApp-acknowledgements.plist"; sourceTree = "<group>"; };
-		4BE1E3DC1380F939DD2C09383C263273 /* PrebidMobile.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = PrebidMobile.xcframework; path = MSPSharedLibraries/PrebidMobile.xcframework; sourceTree = "<group>"; };
 		4D2B59248BE171CB8B6FCEFC5325BB9C /* Pods-MSPDemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MSPDemoApp.release.xcconfig"; sourceTree = "<group>"; };
 		54AB73FBE8575E1F10CA4A1CA3DA6B5B /* MSPSharedLibraries.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MSPSharedLibraries.release.xcconfig; sourceTree = "<group>"; };
 		5EDCA80152BF6BF48A546A0472105CC7 /* Pods-MSPCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MSPCore.release.xcconfig"; sourceTree = "<group>"; };
 		67CC263219F6859690A26A54B11F82AC /* Pods-GoogleAdapter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GoogleAdapter.debug.xcconfig"; sourceTree = "<group>"; };
 		6EE9DC9EF5C3B337118ECE378D9B35DC /* Pods-GoogleAdapter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GoogleAdapter.release.xcconfig"; sourceTree = "<group>"; };
 		7B03EFB7414F53E4E1CC890884D783EA /* Pods-GoogleAdapter-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GoogleAdapter-acknowledgements.markdown"; sourceTree = "<group>"; };
-		80800E47D1A95F6C2E0CC2125AB4C267 /* MSPiOSCore.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = MSPiOSCore.xcframework; path = MSPSharedLibraries/MSPiOSCore.xcframework; sourceTree = "<group>"; };
 		8569F2FC0AE4585D26DB63FD9008A850 /* Pods-MSPDemoApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MSPDemoApp-dummy.m"; sourceTree = "<group>"; };
 		8C9549317D26022A031A870F485B91B5 /* Pods-MSPDemoApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MSPDemoApp-acknowledgements.markdown"; sourceTree = "<group>"; };
 		90C26F902AB881C23E30370D9A690562 /* MSPSharedLibraries-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "MSPSharedLibraries-xcframeworks.sh"; sourceTree = "<group>"; };
+		9412C286215F92372E429BA1EC65A9A9 /* shared.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = shared.xcframework; path = MSPSharedLibraries/shared.xcframework; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F76137B4FBBDE51E1D0861A51F6A522 /* Pods-MSPCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MSPCore.debug.xcconfig"; sourceTree = "<group>"; };
+		A0821A123D073B01823D0E76CBD67D85 /* PrebidMobile.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = PrebidMobile.xcframework; path = MSPSharedLibraries/PrebidMobile.xcframework; sourceTree = "<group>"; };
 		A7C5C4024EBB2A5BEB0CCAEDCFC7B09E /* Pods-GoogleAdapter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GoogleAdapter-dummy.m"; sourceTree = "<group>"; };
 		B0E664325B04ADAFDDE75AA1DEA778C0 /* Pods-MSPCore-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MSPCore-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B6E557F98C7A4C446F7AC3F0BEB2266B /* Pods-GoogleAdapter */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-GoogleAdapter"; path = "libPods-GoogleAdapter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,15 +113,6 @@
 			path = "../Target Support Files/MSPSharedLibraries";
 			sourceTree = "<group>";
 		};
-		2ECEB0C23F6CB1E9520110C2F778E690 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				80800E47D1A95F6C2E0CC2125AB4C267 /* MSPiOSCore.xcframework */,
-				4BE1E3DC1380F939DD2C09383C263273 /* PrebidMobile.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		4DB2DFB856E5781846F7CF4626926861 /* Pods-MSPDemoApp */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,7 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				C90F52553D45E5E58EA829A1DD7857DA /* MSPSharedLibraries.h */,
-				2ECEB0C23F6CB1E9520110C2F778E690 /* Frameworks */,
+				F3632E7A1286BD7AFCBD378B5D42AABA /* Frameworks */,
 				1CA4124CF08FCE8B6AA87F24C326A1A9 /* Support Files */,
 			);
 			name = MSPSharedLibraries;
@@ -204,6 +195,15 @@
 				602D50397BB348571FDB5ABDE195C4E0 /* MSPSharedLibraries */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F3632E7A1286BD7AFCBD378B5D42AABA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0821A123D073B01823D0E76CBD67D85 /* PrebidMobile.xcframework */,
+				9412C286215F92372E429BA1EC65A9A9 /* shared.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

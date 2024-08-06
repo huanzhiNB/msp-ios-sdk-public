@@ -1,16 +1,16 @@
 PODS:
-  - MSPSharedLibraries (0.0.32)
+  - MSPSharedLibraries (0.0.33)
 
 DEPENDENCIES:
-  - MSPSharedLibraries (= 0.0.32)
+  - MSPSharedLibraries (= 0.0.33)
 
 SPEC REPOS:
   trunk:
     - MSPSharedLibraries
 
 SPEC CHECKSUMS:
-  MSPSharedLibraries: b028dd77a049438b77d9ea9727c84abb948891ef
+  MSPSharedLibraries: 6d63e0dd4747ff12fbaa4599eb6a4ab08d534a44
 
-PODFILE CHECKSUM: 9bc9888779c532f097d481048c1426234d8ff6e2
+PODFILE CHECKSUM: c8130437f6249b4b0b03361d44b2175fafb020a1
 
 COCOAPODS: 1.14.3
