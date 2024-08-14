@@ -7,8 +7,7 @@
 
 import Foundation
 import UIKit
-//import MSPiOSCore
-import shared
+import MSPiOSCore
 
 open class MSPNativeAdContainer: UIView {
     

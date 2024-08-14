@@ -1,6 +1,6 @@
 import Foundation
-import shared
-//import MSPiOSCore
+//import shared
+import MSPiOSCore
 import PrebidMobile
 
 public class PrebidBidLoader : BidLoader {
