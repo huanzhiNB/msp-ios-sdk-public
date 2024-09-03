@@ -1,6 +1,6 @@
 import Foundation
-//import MSPiOSCore
-import shared
+import MSPiOSCore
+//import shared
 
 public class GoogleManager: AdNetworkManager {
     
