@@ -7,76 +7,61 @@
 
 import UIKit
 import MSPCore
-import GoogleAdapter
-import PrebidAdapter
+//import GoogleAdapter
+//import PrebidAdapter
+//import NovaAdapter
 import MSPiOSCore
+//import NovaCore
+//import shared
+//import MetaAdapter
+import AppTrackingTransparency
 
 class ViewController: UIViewController {
     
     @IBOutlet var appBannerView: UIView!
-    var adLoader: iOSAdLoader?
+    weak var adLoader: MSPAdLoader?
+    public var nativeAdView: NativeAdView?
+    public var isCtaShown = false
 
     override func viewDidLoad() {
+        //google test ad config: msp-android-foryou-large-display_gg
         super.viewDidLoad()
-        var adLoader = iOSAdLoader()
-        self.adLoader = adLoader
-        let adRequest = AdRequest(customParams: [String: String](),
-                                  geo: Geo(city: "Beijing", stateCode: "12345", zipCode: "12345", lat: "12345", lon: "12345"),
-                                  context: nil,
-                                  adaptiveBannerSize: AdSize(width: 320, height: 50, isInlineAdaptiveBanner: false, isAnchorAdaptiveBanner: false),
-                                  adSize: AdSize(width: 320, height: 50, isInlineAdaptiveBanner: false, isAnchorAdaptiveBanner: false),
-                                  placementId: "msp-android-foryou-large-display_gg")
-        adLoader.loadAd(placementId: "msp-android-foryou-large-display_gg",
-                        adListener: self,
-                        context: self,
-                        adRequest: adRequest,
-                        rootViewController:self)
-        // Do any additional setup after loading the view.
+        
+        let button1 = UIButton(type: .system)
+                button1.setTitle("Prebid Banner View", for: .normal)
+                button1.addAction(UIAction { [weak self] _ in
+                    self?.openDemoAdPage(adType: .prebidBanner)
+                }, for: .touchUpInside)
+                button1.frame = CGRect(x: 100, y: 200, width: 200, height: 50)
+                view.addSubview(button1)
+        
+        let button2 = UIButton(type: .system)
+                button2.setTitle("Google Banner View", for: .normal)
+                button2.addAction(UIAction { [weak self] _ in
+                    self?.openDemoAdPage(adType: .googleBanner)
+                }, for: .touchUpInside)
+                button2.frame = CGRect(x: 100, y: 300, width: 200, height: 50)
+                view.addSubview(button2)
+        let button3 = UIButton(type: .system)
+                button3.setTitle("Google Native View", for: .normal)
+                button3.addAction(UIAction { [weak self] _ in
+                    self?.openDemoAdPage(adType: .googleNative)
+                }, for: .touchUpInside)
+                button3.frame = CGRect(x: 100, y: 400, width: 200, height: 50)
+                view.addSubview(button3)
+        let button4 = UIButton(type: .system)
+                button4.setTitle("Nova Native View", for: .normal)
+                button4.addAction(UIAction { [weak self] _ in
+                    self?.openDemoAdPage(adType: .novaNative)
+                }, for: .touchUpInside)
+                button4.frame = CGRect(x: 100, y: 500, width: 200, height: 50)
+                view.addSubview(button4)
+       
     }
 
+    func openDemoAdPage(adType: AdType) {
+        let demoAdVC = DemoAdViewController(adType: adType)
+        navigationController?.pushViewController(demoAdVC, animated: true)
+    }
 
 }
-
-extension ViewController: AdListener {
-    func onAdClick(ad: MSPAd) {
-        
-    }
-    
-    func onAdImpression(ad: MSPAd) {
-        
-    }
-    
-    func onAdLoaded(ad: MSPAd) {
-        if ad is PrebidAd {
-            let prebidAd = ad as? PrebidAd
-            if let adView = prebidAd?.adView {
-                appBannerView.backgroundColor = .red
-                appBannerView.addSubview(adView)
-                NSLayoutConstraint.activate([
-                    adView.centerYAnchor.constraint(equalTo: appBannerView.centerYAnchor),
-                    adView.leadingAnchor.constraint(equalTo: appBannerView.leadingAnchor),
-                    adView.widthAnchor.constraint(lessThanOrEqualTo: appBannerView.widthAnchor),
-                    adView.heightAnchor.constraint(lessThanOrEqualTo: appBannerView.heightAnchor),
-                ])
-            }
-        } else if ad is GoogleAd {
-            let googleAd = ad as? GoogleAd
-            if let adView = googleAd?.adView {
-                appBannerView.backgroundColor = .red
-                appBannerView.addSubview(adView)
-                NSLayoutConstraint.activate([
-                    adView.centerYAnchor.constraint(equalTo: appBannerView.centerYAnchor),
-                    adView.leadingAnchor.constraint(equalTo: appBannerView.leadingAnchor),
-                    adView.widthAnchor.constraint(lessThanOrEqualTo: appBannerView.widthAnchor),
-                    adView.heightAnchor.constraint(lessThanOrEqualTo: appBannerView.heightAnchor),
-                ])
-            }
-        }
-    }
-    
-    func onError(msg: String) {
-        
-    }
-    
-}
-
