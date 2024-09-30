@@ -31,8 +31,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // optional ad networks
         //MSP.shared.setGoogleManager(googleManager: GoogleManager())
         MSP.shared.bidLoaderProvider.googleQueryInfoFetcher = GoogleQueryInfoFetcherHelper()
-        //MSP.shared.setMetaManager(metaManager: MetaManager())
         //MSP.shared.bidLoaderProvider.facebookBidTokenProvider = FacebookBidTokenProviderHelper()
+
         MSP.shared.initMSP(initParams: mspInitParameters, sdkInitListener: nil)
         
         window = UIWindow(frame: UIScreen.main.bounds)
